@@ -21,7 +21,7 @@ client.connect().then(() => {
 
 // Middleware to parse JSON bodies
 app.use(express.json());
-
+app.use(express.static('public'));
 app.use(cors());
 // POST endpoint to store data
 app.post('/store', async (req, res) => {
