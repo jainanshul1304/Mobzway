@@ -57,7 +57,7 @@
         };
         $.ajax({
           type: 'POST',
-          url: 'http://localhost/store',
+          url: 'https://mobzway.onrender.com/store',
           timeout: 5000,
           data: JSON.stringify(jsonData),
           contentType: 'application/json',
@@ -73,7 +73,7 @@
       $('#getDataButton').click(function() {
         $.ajax({
           type: 'GET',
-          url: 'http://localhost/data',
+          url: 'https://mobzway.onrender.com/data',
           success: function(response) {
             displayData(response);
           },
