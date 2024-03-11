@@ -57,7 +57,7 @@
         };
         $.ajax({
           type: 'POST',
-          url: 'http://localhost:3000/store',
+          url: 'http://localhost/store',
           timeout: 5000,
           data: JSON.stringify(jsonData),
           contentType: 'application/json',
@@ -73,7 +73,7 @@
       $('#getDataButton').click(function() {
         $.ajax({
           type: 'GET',
-          url: 'http://localhost:3000/data',
+          url: 'http://localhost/data',
           success: function(response) {
             displayData(response);
           },
